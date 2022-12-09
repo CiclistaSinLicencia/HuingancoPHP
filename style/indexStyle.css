@@ -1,0 +1,520 @@
+
+/*-------------------------
+          BANNER
+--------------------------*/
+.banner {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0px 2px 5px #333333ab;
+    margin-bottom: 5em;
+  }
+  .banner-background{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.8);
+  }
+  .content-banner {
+    color: floralwhite;
+    width: 100%;
+    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+ 
+  }
+  .banner-text{
+    width:clamp(18rem,50%,60rem);
+
+  }
+  .banner-titulo {
+    color: floralwhite;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: clamp(29px,5vw,40px);
+  }
+  
+  .banner-btn{
+    text-decoration: none;
+    color: white;
+    margin-top: 1em;
+    font-size: 18px;
+  }
+  .banner-btn:hover{
+  
+    color: var(--nav-btn-hover);
+  }
+  
+  .btn-banner {
+    padding: 0.1em 0.8em;
+    color: floralwhite;
+    margin-top: 10px;
+    background-color: var(--octubre-btn-backG);
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s;
+    outline: 2px solid floralwhite;
+  }
+  
+  .btn-banner:hover {
+    color: #222;
+    background-color: floralwhite;
+    outline-offset: 2px;
+  }
+  
+  #btn-reserva {
+    color: var(--joyas-title-btn-hover);
+    outline-color: var(--joyas-title-btn-hover);
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  
+  #btn-reserva:hover {
+    background-color: var(--joyas-title-btn-hover);
+    color: #333;
+    outline-offset: -2px;
+    outline: 4px solid #333;
+  }
+  
+  /* end Banner */
+  
+  /*-------------------------
+        JOYAS HUINGANCO
+  --------------------------*/
+  #cnt-titulo-joyas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--form-consulta-title);
+    margin: 2em 0px;
+    height: 80px;
+    flex-direction: column;
+  }
+  
+  
+  .ctn-joyas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 20px;
+    column-gap: 30px;
+    flex-direction: grid;
+    color: #202020;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+  }
+  
+  .titulo-joyas {
+    font-size: var(--font-title);
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  .bloque-joyas {
+  
+    flex-basis: 400px;
+    flex-grow: 0.2;
+    min-height: 550px;
+  }
+  
+  .texto-bloque-joyas {
+    font-size: var(--fs-text-16);
+    color: var(--joyas-txt);
+    
+  }
+  
+  .titulo-bloque-joyas {
+    font-size: var(--font-subtitle);
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+  }
+
+  .bloque-img-joyas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px 3px 0px 0px;
+    margin-bottom: 5px;
+  }
+  
+  .ctn-altura-dificultad {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: var(--font-normal);
+    margin-top: 1rem;
+  }
+  
+  .dificultad {
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    display: inline-block;
+    color: black;
+  }
+  
+  #facil {
+    background-color: var(--form-consulta-title);
+  }
+  
+  #media {
+    background-color: #ffba65;
+  }
+  
+  #dificil {
+    background-color: #fa7373;
+  }
+  
+  .altura {
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    display: inline-block;
+    background-color: #d6d6d6;
+    color: black;
+    text-align: center;
+  }
+  
+  .anchor-titulo-bloque-joyas {
+    text-decoration: none;
+    color: rgb(81, 117, 13);
+    transition: 0.2s ease-in-out;
+    color: var(--joyas-title-btn);
+  }
+  
+  .anchor-titulo-bloque-joyas:hover {
+    color: var(--nav-btn-hover);
+  }
+  
+    
+  @media(max-width:700px){
+    .texto-bloque-joyas{
+text-align: center;
+      margin-inline: 5px ;
+    }
+    .titulo-bloque-joyas{
+text-align: center;
+    }
+    .ctn-altura-dificultad{
+     align-items: center;
+     justify-content: center; 
+    }
+  }
+
+  
+  /*-------------------------
+          OCTUBRE
+  --------------------------*/
+  #banner-octubre {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 4em;
+    height: 70vmin;
+  }
+  
+  .octubre-huignanco {
+    text-align: left;
+    width: 50%;
+    /* Ancho caja texto */
+    min-height: 100%;
+    padding: 20px;
+    background-color: var(--octubre-backG);
+    color: floralwhite;
+  }
+  
+  .octubre-text {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    max-height: 45vmin;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow: auto;
+    text-overflow: ellipsis;
+  }
+  
+  .text-desktop {
+    padding-top: 20px;
+  }
+  
+  /*-------------------------
+            CAROUSEL OCTUBRE
+  --------------------------*/
+  .section-carousel {
+    width: 50%;
+    /* ancho imagen */
+  }
+  
+  .carousel {
+    /* height: 32em; */
+    height: 70vmin;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .carousel-button {
+    background: none;
+    z-index: 1;
+    /* para ponerlo sobre los otros elementos */
+    position: absolute;
+    top: 50%;
+    /* Para centrar */
+    transform: translateY(-50%);
+    border: none;
+    font-size: 5em;
+    cursor: pointer;
+    color: #ffffffbf;
+    transition: 0.1s linear;
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:hover {
+    color: #d0fe8a;
+  
+    scale: 1.01;
+  }
+  
+  .carousel .next {
+    right: 20px;
+  
+    width: 60px;
+  }
+  
+  .carousel .next:hover {
+    right: 15px;
+  }
+  
+  .prev {
+    left: 20px;
+    width: 60px;
+  }
+  
+  .prev:hover {
+    left: 15px;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.5s opacity ease-in-out;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+  }
+  
+  .slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Mobile */
+  @media (max-width: 800px) {
+    #banner-octubre {
+      margin-bottom: 20px;
+  
+      flex-wrap: wrap-reverse;
+  
+      height: 100%;
+    }
+  
+    .slide>img {
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    .btn-octubre-conocemas {
+      padding: 2px 7px 2px 7px;
+    }
+  
+    .section-carousel {
+      width: 100%;
+      height: 62vmin;
+    }
+  
+    .octubre-huignanco p {
+      margin-right: 0px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+  
+    .octubre-huignanco h2 {
+      font-weight: 500;
+    }
+  
+    .carousel {
+      height: 100%;
+    }
+  
+    .carousel-button {
+      font-size: 3em;
+    }
+  
+    .octubre-huignanco {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  /*-------------------------
+     FORMULARIO CONSULTAS
+  --------------------------*/
+  
+  .ctn-comentario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    flex-direction: column;
+    color: var(--form-consulta-title);
+   
+  }
+  
+  .titulo-comentario {
+    font-size: var(--font-title);
+    font-weight: 500;
+  }
+  
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 300px;
+    gap: 10px;
+  }
+  
+  .ctn-form {
+    width: 50%;
+    height: 280px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  
+  }
+  
+  .ctn-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  
+  }
+  
+  .form-input {
+    width: 48%;
+    padding: 0.4em 0em;
+    font-size: 1em;
+    padding-left: 10px;
+    transition: 0.2s;
+    border-radius: 8px;
+    border: 1px solid var(--form-input-border);
+    background-color: var(--form-input-backG);
+    color: var(--form-input-txt);
+  }
+  
+  .form-input ::placeholder {
+    font-size: 1em;
+    color: var(--);
+  }
+  
+  .form-input:focus {
+    outline: 1px solid var(--color-huignanco);
+  }
+  
+  .textarea {
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 5px;
+    resize: none;
+    transition: 0.2s;
+    border-radius: 8px;
+    border: 1px solid var(--form-input-border);
+  
+    background-color: var(--form-input-backG);
+    color: var(--form-input-txt);
+  
+  }
+  
+  .textarea::placeholder {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  
+  .textarea:focus {
+    outline: 1px solid var(--color-huignanco);
+  }
+  
+  .btn-enviar {
+    width: 100%;
+    background-color: var(--form-submit-btn-backG);
+    color: white;
+    font-weight: 500;
+    padding: 0.5em 0em;
+    transition: 0.2s;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #7dc446;
+  }
+  
+  @media (max-width: 891px) {
+    .ctn-input {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .form-input {
+      width: 100%;
+    }
+    
+  /*  JOYAS*/
+  .bloque-joyas {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  .text-desktop {
+    display: none;
+  }
+
+  /*  */
+  /* BANNER */
+
+  
+  }
+  
