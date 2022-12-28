@@ -10,11 +10,11 @@
 
 
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/reservaStyle.css">
+    <link rel="stylesheet" href="style/global.css?asb">
+    <link rel="stylesheet" href="style/reserva.css?abs">
 
-    <script defer src="script/script.js"></script>
-    <script defer src="reservaScript.js"></script>
+    <script defer src="script/global.js?a"></script>
+    <script defer src="script/reserva.js"></script>
 
 
     <!-- LOGOS -->
@@ -28,6 +28,7 @@
   
   <?php
 include "components/header.php";
+include "components/login.php";
   ?>
 
 
@@ -224,11 +225,14 @@ include "components/header.php";
 
 
                     <div class="ctn-input">
+                    
+                    
                         <input type="text" class="input-form-reserva" required>
                         <span class="input-toolkit">Nombre<span class="required"> *</span></span>
                     </div>
 
                     <div class="ctn-input">
+                 
                         <input type="text" class="input-form-reserva" required>
                         <span class="input-toolkit">Apellido<span class="required"> *</span></span>
                     </div>
@@ -258,7 +262,7 @@ include "components/header.php";
                     <label for="rights" class="label-rights">Aceptas entregar tu informacion para alimentar la base de
                         datos China? <span class="required">*</span></label>
                 </div>
-                <p id="txt-cod-descuento">Metele un Ciclista para el dto</p>
+                <p id="txt-cod-descuento">codigo de descuento: Ciclista</p>
                 <div class="ctn-cod-totalPagar">
 
                     <input autocomplete="off" id="cod-descuento-reserva" type="text" placeholder="Codigo de descuento">

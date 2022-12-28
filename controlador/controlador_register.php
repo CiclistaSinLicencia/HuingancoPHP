@@ -13,8 +13,7 @@
         $regPass = $_POST ['register-password'];
         $regSubmit = $_POST ['register-submit'];
 
-
-        /* detectar duplicado */
+ /* detectar duplicado */
        $duplicatesQuery = $conexion->query( "SELECT clave,usuario,mail FROM usuarios WHERE usuario = '$regUser' || clave = '$regPass' ||  mail = '$regMail' ");
 
 if($duplicatesQuery->fetch_object()){

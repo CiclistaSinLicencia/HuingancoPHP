@@ -1,3 +1,10 @@
+<?php
+session_start();
+include "modelo/conexion.php";
+include "controlador/controlador_login.php";
+include "controlador/controlador_register.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +19,11 @@
     <meta name="author" content="Ciclista Sin Licencia">
     <meta name="Robots" content="no-index"> <!-- Evitar Indexasion -->
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/indexStyle.css?v32">
+    <link rel="stylesheet" href="style/global.css?a">
+    <link rel="stylesheet" href="style/index.css?v2">
 
-    <script defer src="script/script.js"></script>
-    <script defer src="script/indexScript.js"></script>
+    <script defer src="script/global.js?v2"></script>
+    <script defer src="script/index.js?v2"></script>
 
     <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link defer rel="shortcut icon" type="image/x-icon" href="/img/favi-con.ico" />
@@ -26,11 +33,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="light">
-
 <?php
 include "components/header.php";
-
+include "components/login.php";
 ?>
+
+
+
 
 
 <!-- -------------------------
@@ -43,7 +52,7 @@ include "components/header.php";
         <div class="content-banner">
             <h1 class="banner-titulo"> El jardin del Neuquen</h1>
             <p class="banner-text">Huingán-có es una localidad Argentina del departamento Minas, en la provincia del Neuquén.
-                Ubicado a los pies de la Cordillera del Viento
+                Ubicado a los pies de la Cordillera del Viento. La comunidad cuenta con una población de alrededor de mil habitantes, fue fundada el 16 de abril de 1964.
             </p>
             <a href="#" class="banner-btn" aria-label="Boton para mas informacion">Más Info...</a>
         </div>

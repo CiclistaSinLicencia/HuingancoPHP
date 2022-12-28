@@ -137,7 +137,7 @@ function funDescuento() {
 
         dtoTrue = false
         dtoCodigo = 0
-        txtCodDescuento.innerHTML = "metele 'ciclista' para el dto "
+        txtCodDescuento.innerHTML = "codigo de descuento: Ciclista "
         inputDescuento.style.border = "3px solid var( --form-input-border)"
         calcKm()
 

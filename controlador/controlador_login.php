@@ -13,7 +13,7 @@ if(!empty($_POST["btnlogin"])) {
 
         /* crea una query para ver si el usuario esta en la base de datos */ 
         
-        $sql = $conexion->query("select * from usuarios where usuario='$usuario' && clave='$password' ");
+        $sql = $conexion->query("SELECT * from usuarios where usuario='$usuario' && clave='$password' ");
 
 /* si el usuario existe ir a home */
         if($datos=$sql->fetch_object())
